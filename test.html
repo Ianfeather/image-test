@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.buzzfeed.com/static-assets/solid/solid.2.11.0.min.css" />
+  </head>
+  <body class="fill-gray-lighter">
+
+    <table class="table-border xs-col-11 xs-py3 xs-px1 xs-mx-auto xs-my4 fill-white xs-border rounded">
+      <tr>
+        <th class="xs-col-3">Transformation</th>
+        <th class="xs-col-3">Prod</th>
+        <th class="xs-col-3">Stage (Cloudinary)</th>
+        <th class="xs-col-3">Stage (Fastly IO)</th>
+      </tr>
+
+      <tr>
+        <td>(none)</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?service=fastly_io" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>output-quality=10</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=10" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=10&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=10&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-quality=auto</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=auto" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=auto&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-quality=auto&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=200:50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=200:50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=200:50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=200:50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;30,75</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;30,75" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;30,75&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;30,75&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;right,top</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;right,top" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;right,top&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;right,top&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;center,top</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;center,top" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;center,top&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;center,top&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;left,bottom</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,bottom" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,bottom&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,bottom&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;left,center</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,center" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,center&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?crop=150:200;left,center&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fill=200:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fill=200:200;left,center</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200;left,center" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200;left,center&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fill=200:200;left,center&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fit=200:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fit=200:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fit=200:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?fit=200:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=*:150</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:150" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:150&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:150&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=150:*</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=150:*" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=150:*&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=150:*&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=300:100</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=300:100" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=300:100&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=300:100&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=*:150</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=*:150" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=*:150&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=*:150&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=150:*</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=150:*" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=150:*&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=150:*&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=300:100</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=300:100" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=300:100&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=300:100&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=2.0x</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=2.0x" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=2.0x&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=2.0x&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=0.5x</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=0.5x" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=0.5x&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?downsize=0.5x&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>brightness=-50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=-50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=-50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=-50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>brightness=50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?brightness=50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=*:300&crop=100:100;310,140</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:300&crop=100:100;310,140" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:300&crop=100:100;310,140&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?resize=*:300&crop=100:100;310,140&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=auto</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=auto" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=auto&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=auto&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=webp</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=webp" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=webp&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=webp&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=jpg</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=jpg" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=jpg&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=jpg&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=png</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=png" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=png&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-static/static/2017-01/7/12/asset/buzzfeed-prod-web-02/sub-buzz-15626-1483808978-1.jpg?output-format=png&service=fastly_io" />
+        </td>
+      </tr>
+
+        <tr>
+        <td>(none)</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?service=fastly_io" />
+        </td>
+      </tr>
+
+      <tr>
+        <td>output-quality=10</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=10" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=10&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=10&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-quality=auto</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=auto" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=auto&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-quality=auto&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=200:50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=200:50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=200:50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=200:50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;30,75</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;30,75" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;30,75&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;30,75&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;right,top</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;right,top" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;right,top&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;right,top&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;center,top</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;center,top" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;center,top&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;center,top&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;left,bottom</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,bottom" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,bottom&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,bottom&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=150:200;left,center</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,center" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,center&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=150:200;left,center&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fill=200:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fill=200:200;left,center</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200;left,center" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200;left,center&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fill=200:200;left,center&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>fit=200:200</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fit=200:200" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fit=200:200&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?fit=200:200&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=*:150</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=*:150" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=*:150&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=*:150&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=150:*</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=150:*" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=150:*&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=150:*&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=300:100</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=300:100" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=300:100&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=300:100&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=*:150</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=*:150" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=*:150&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=*:150&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=150:*</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=150:*" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=150:*&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=150:*&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=300:100</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=300:100" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=300:100&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=300:100&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>resize=2.0x</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=2.0x" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=2.0x&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?resize=2.0x&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>downsize=0.5x</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=0.5x" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=0.5x&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?downsize=0.5x&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>brightness=-50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=-50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=-50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=-50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>brightness=50</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=50" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=50&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?brightness=50&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>crop=300:330;left,top&resize=100:*output-format=auto</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=300:330;left,top&resize=100:*output-format=auto" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=300:330;left,top&resize=100:*output-format=auto&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?crop=300:330;left,top&resize=100:*output-format=auto&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=mp4</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=mp4" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=mp4&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=mp4&service=fastly_io" />
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>output-format=jpg</td>
+        <td>
+          <img src="https://img.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=jpg" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=jpg&service=cloudinary" />
+        </td>
+        <td>
+          <img src="https://img-stage.buzzfeed.com/buzzfeed-qa01/static/2018-06/6/0/enhanced/buzzfeed-prod-web-02/anigif_enhanced-24691-1528258793-19.gif?output-format=jpg&service=fastly_io" />
+        </td>
+      </tr>
+
+
+    </table>
+
+  </body>
+</html>
